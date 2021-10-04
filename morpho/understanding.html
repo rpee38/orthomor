@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Manulex-Morpho</title>
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
+
+      href="resolution_small.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
+
+      href="resolution_smallsmall.css">
+  </head>
+  <body>
+    <header> <br>
+      <table width="100%" border="0">
+        <tbody>
+          <tr>
+            <td align="left" width="17%">
+              <p class="style-langue"> <a style="text-decoration:none" href="index.html">
+                  Français</a></p>
+            </td>
+            <td align="center" width="69%"><span class="style-titre">Manulex
+                Morpho </span></td>
+            <td align="center" width="17%"><img src="images/white.JPG" height="41"
+
+                width="22"></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <ul id="menu-demo2">
+        <li><a href="../indexEngl.html">Home</a></li>
+        <li><a href="#">Description▼</a>
+          <ul>
+            <li><a href="indexEngl.html">General description</a></li>
+            <li><a href="understanding.html">Understanding Manulex-Morpho</a></li>
+            <li><a href="phonetics.html">Phonetic codes</a></li>
+            <li><a href="morphology.html">Morphology codes</a></li>
+          </ul>
+        </li>
+        <li><a href="download.html">Download</a></li>
+      </ul>
+    </header>
+    <main></main>
+    <footer></footer>
+    <article>
+      <h6> <br>
+        <br>
+        <br>
+      </h6>
+      <titrepage>
+        <h1>Understanding <i>Manulex Morpho</i></h1>
+      </titrepage>
+      <p>In what follows, the symbols &lt; &gt; represent a field entry on the
+        website. For example, &lt;e&gt; means that the embedded within the
+        symbol is entered in a field of the website.<br>
+        <br>
+        Quotation marks " : used to refer to the spelling of a word in French.
+        For example: the word "char".<br>
+        <br>
+        The symbols / / : used to refer to the phonetic transcription of a word
+        or a grapheme in French, for example /SaR/ for the word "char". <br>
+        <br>
+        The phonetic transcription relies on a simplified phonetic alphabet
+        created for the database (correspondence between the International
+        Phonetic Alphabet and the simplified version used in to code the
+        database can be found on the page “Description/Phonetic codes”)<br>
+      </p>
+      <p>
+        <b>General information</b><br>
+        <br>
+        • Orthographic code of the word <br>
+        <br>
+        • Phonological code of the word<br>
+        <br>
+        • Syntactic category (NC: noun; NP: proper noun; VER: verb; ADJ:
+        adjective; PRO: pronoun; PRE: preposition; CON: conjunction; DET:
+        determinant))<br>
+        <br>
+        • Frequency of use (according to <i>Manulex</i>; Lété et al., 2004)
+        provides textual frequency expressed as the number of occurrences of a
+        word per million (value derived from the F value in the Manulex
+        database)<br>
+        <br>
+        • Word segmentation into its component graphemes (the symbol '.'
+        separates two consecutive graphemes)<br>
+        <br>
+        • Phonological segmentation of a word reflecting its segmentation into
+        graphemes<br>
+        <br>
+        • Grapheme-Phoneme correspondences: this field allows users to identify
+        words that contain any given correspondence(s). In this field, a
+        Grapheme-Phoneme correspondence will be tagged using the &lt;-&gt;
+        symbol to separate a grapheme to the left from the corresponding phoneme
+        to the right: searching for the grapheme “ch” pronounced /S/ will be
+        entered as &lt;ch-S&gt;. The symbol &lt;.&gt; will be used to delimit a
+        succession of Grapheme-Phoneme correspondences in a word. The sequence
+        will be enclosed in brackets using a left parenthesis &lt;(&gt; to tag
+        the beginning of a word, and a right parenthesis &lt;)&gt; to tag the
+        end of a word. To search for the word “char” pronounced /SaR/, the user
+        will enter the sequence &lt;(ch-S.a-a.r-R)&gt; in the field. Tags can
+        also be used to produce a list of all the words that include a specific
+        Grapheme-Phoneme correspondence: entering &lt;(ch-S.&gt; in the field,
+        will list all the words starting with the grapheme “ch” pronounced /S/.
+        Conversely, entering &lt;.ch-S)&gt; in the field, will list all the
+        words ending with the grapheme “ch” pronounced /S/.<br>
+        <br>
+        <b>Word length indices </b><br>
+        <br>
+        • Number of letters <br>
+        • Number of phonemes <br>
+        • Number of graphemes <br>
+        • Number of syllables<br>
+        <br>
+        <b>Frequency of Grapheme-Phoneme correspondences </b><br>
+        <br>
+        <i>(Note. Textual frequency calculated for per token estimates
+          corresponds to the frequency of a word per million words. The
+          frequency of Phoneme-Grapheme correspondences is the same as the
+          frequency of Grapheme-Phoneme correspondences)</i>.<br>
+        <br>
+        • Mean frequency of Grapheme-Phoneme correspondences, per type count <br>
+        • id., per token<br>
+        • Frequency of the Grapheme-Phoneme correspondence at the beginning of a
+        word, per type<br>
+        • id., per token<br>
+        • Mean frequency of Grapheme-Phoneme correspondences in an intermediate
+        position in a word (i.e. not at the beginning or the end), per type <br>
+        • id., per token<br>
+        • Frequency of the Grapheme-Phoneme correspondence at the end of a word,
+        per type<br>
+        • id., per token<br>
+        <br>
+        <b>Consistency of Grapheme-Phoneme correspondences</b><br>
+        <br>
+        • Mean consistency of Grapheme-Phoneme correspondences, per type count <br>
+        • id., per token<br>
+        • Consistency of the Grapheme-Phoneme correspondence at the beginning of
+        a word, per type<br>
+        • id., per token<br>
+        • Mean consistency of Grapheme-Phoneme correspondences in an
+        intermediate position in a word (i.e. not at the beginning or the end),
+        per type<br>
+        • id., per token<br>
+        • Consistency of the Grapheme-Phoneme correspondence at the end of a
+        word, per type<br>
+        • id., per token<br>
+        <br>
+        <b>Consistency of Phoneme-Grapheme correspondences</b><br>
+        <br>
+        • Mean consistency of Phoneme-Grapheme correspondences, per type count<br>
+        • id., per token<br>
+        • Consistency of the Phoneme-Grapheme correspondence at the beginning of
+        a word, per type<br>
+        • id., per token<br>
+        • Mean consistency of Phoneme-Grapheme correspondences in an
+        intermediate position in a word, per type count<br>
+        • id., per token<br>
+        • Consistency of the Phoneme-Grapheme correspondence at the end of a
+        word, per type<br>
+        • id., per token<br>
+        <br>
+      </p>
+      <br>
+      <br>
+      <hr> <br>
+      <br>
+      <br>
+      <br>
+    </article>
+    <br>
+    <br>
+  </body>
+</html>

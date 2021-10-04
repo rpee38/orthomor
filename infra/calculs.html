@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Manulex-Infra</title>
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
+
+      href="resolution_small.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
+
+      href="resolution_smallsmall.css">
+  </head>
+  <body>
+    <header> <br>
+      <table width="100%" border="0">
+        <tbody>
+          <tr>
+            <td align="left" width="17%">
+              <p class="style-langue"> <a style="text-decoration:none" href="indexEngl.html">
+                  English</a></p>
+            </td>
+            <td align="center" width="69%"><span class="style-titre">Manulex
+                Infra </span></td>
+            <td align="center" width="17%"><img src="images/white.JPG" height="41"
+
+                width="22"></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <ul id="menu-demo2">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="#">Description▼</a>
+          <ul>
+            <li><a href="index.html">Description générale</a></li>
+            <li><a href="calculs.html">Comprendre Manulex-infra</a></li>
+            <li><a href="phonetique.html">Codes Phonétiques</a></li>
+            <li><a href="syllabe.html">Syllabes</a></li>
+            <li><a href="grapheme.html">Graphèmes</a></li>
+          </ul>
+        </li>
+        <li><a href="telechargement.html">telechargement</a></li>
+      </ul>
+    </header>
+    <main></main>
+    <footer></footer>
+    <article> <br>
+      <h6> <a> </a></h6>
+      <titrepage>
+        <h1>Comprendre Manulex_infra</h1>
+      </titrepage>
+      <p> Les calculs sont de deux natures différentes: caractéristiques de
+        longueur des mots, et caractéristiques qui sont fonction du niveau de
+        scolarité. Les caractéristiques de longueurs sont le nombre de lettres,
+        de phonèmes, de graphèmes, et de syllabes de chaque mot. Contrairement
+        aux caractéristiques de longueur, les autres caractéristiques dépendent
+        du corpus analysé et donc du niveau scolaire. Les quatre corpus lexicaux
+        de Manulex sont G1, G2, G3-5, et G1-5, c'est-à-dire, les mots rencontrés
+        dans les livres scolaires de première année (CP), de seconde année
+        (CE1), de troisième, quatrième et cinquième années, et de la première à
+        la cinquième années. Les entrées lexicales de ces quatre corpus sont
+        accompagnées des estimations statistiques dans les bases de données
+        Manu1, Manu2, Manu35, et ManuAll, respectivement. Les calculs prennent
+        en compte soit les fréquences lexicales des mots (analyses "par-type"),
+        soit les fréquences textuelles des mots (analyses "par token"). Les
+        calculs "par token" prennent en compte la fréquence réelle des mots dans
+        les textes. Cette fréquence textuelle est fournie par l'index U de la
+        base Manulex. Les détails des calculs sont présentés ci-dessous. </p>
+      <p><b>Fréquence des associations Graphème-Phonème, consistance GP et
+          consistance PG</b>. Les ambiguïtés dans le codage phonologique de
+        l'écrit, et les ambiguïtés de codage orthographique du langage parlé
+        sont généralement estimées par des index de consistance. Dans
+        Manulex-Infra, la consistance G-P est égale à la fréquence avec laquelle
+        une association graphème-phonème apparaît divisée par la fréquence
+        totale du graphème quelle que soit sa prononciation. Par exemple, la
+        consistance GP de l'association "ch" -&gt; /S/ (comme dans le mot "chat
+        /Sa/) est obtenue en divisant la fréquence d'occurrence de l'assocation
+        "ch" -&gt; /S/ par la fréquence du graphème "ch" indépendamment de sa
+        prononciation (qui peut correspondre à /S/ mais aussi à /k/ comme dans
+        le mot "choral" /koRal/). L'index de consistance obtenu est multiplié
+        par 100. Sa valeur maximale est donc de 100. Similairement, la
+        consistance PG est égale à la fréquence avec laquelle une association
+        phonème-graphème apparait, divisée par la fréquence totale du phonème,
+        multiplié par 100. </p>
+      <p>Les valeurs de consistance peuvent différer fortement en fonction de la
+        position sérielle des unités graphémiques dans le mot. Ainsi, la
+        morphologie dérivationnelle du Français fait que les finales de mots
+        sont souvent silencieuses, et que l'orthographe est donc moins
+        transparente. Afin de mieux caractériser les associations
+        orthographe-phonologie, les estimations de fréquence et de consistance
+        des associations ont été réalisées en fonction de la position relative
+        des unités dans le mot (position initiale, positions centrales, position
+        finale). Les résultats des calculs sont fournis pour chaque entrée
+        lexicale, ainsi que les valeurs moyennes et les valeurs portant sur
+        l’association la moins fréquente et consistante du mot. </p>
+      <p>Finallement, des tables distinctes fournissent les statistiques
+        moyennes sur la consistance et la fréquence de toutes les associations
+        rencontrées dans les corpus lexicaux. </p>
+      <p><b>Fréquences des unités infra-lexicales</b>. Les fréquences des
+        bigrammes, des biphones et des syllabes ont été calculées pour chacune
+        des entrées lexicales des quatre corpus. La fréquence des bigrammes
+        correspond à la fréquence avec laquelle une séquence de deux lettres
+        cooccurrent dans la liste de mots. Transposé à la phonologie, la
+        fréquence des biphones correspond à la fréquence avec laquelle une
+        séquence de deux phonèmes cooccurrent dans la liste de mots.
+        Finallement, la fréquence des syllabes est également calculée à partir
+        de la segmentation syllabique de chacune des entrées lexicales
+        phonologiques. Les calculs sont réalisés par type et par token, et ils
+        tiennent compte de la position relative des unités (bigrammes, biphones,
+        syllabes) dans le mot (positions initiale, centrale, finale). Des bases
+        suplémentaires fournissent les statistiques moyennes sur la fréquence
+        des bigrammes, biphones, et syllabes. Des tables sont également
+        disponibles pour la fréquence des lettres, des phonèmes, et des
+        trigrammes. </p>
+      <p><b>Voisinage orthographique et phonographique</b>. La densité du
+        voisinage lexical estime les similarités entre les formes lexicales. Le
+        voisinage orthographique d'un mot est habituellement défini comme
+        correspondant au nombre de mots qui lui sont similaires, à une lettre
+        près (substitution d'une lettre). Ainsi, les mots LIRE, RARE, et RIME
+        sont des voisins orthographiques du mot RIRE. La densité du voisinage
+        lexical des mots a été estimée séparément pour les quatre corpus
+        (niveaux 1, 2, 3-5, 1-5) puisqu'elle dépend de l'étendue du vocabulaire
+        considéré. Les estimations sont réalisées par type et par token. Les
+        mesures par type correspondent au nombre de voisins. Les mesures par
+        token prennent en compte la fréquence des mots voisins en additionnant
+        leurs fréquences. Les mots voisins qui sont homographes ne sont
+        comptabilisés qu'une seule fois et leurs fréquences sont additionnées. </p>
+      <p>La performance de lecture à voix haute chez l'adule est facilitée par
+        une catégorie particulière de voisins orthographiques, ceux qui sont
+        également phonologiquement similaires au mot cible à prononcer (Peereman
+        &amp; Content, 1997). Ces voisins lexicaux, qualifiés de
+        "phonographiques" sont donc à la fois orthographiquement et
+        phonologiquement similaires au mot cible. La densité du voisinage
+        phonographique a donc été calculée pour chaque entrée lexicale. La
+        similarité phonologique entre les mots est déterminée similairement à la
+        similarité orthographique, à l'exception du fait que les séquences
+        phonologiques sont cette fois considérées. Ainsi, des mots sont
+        phonologiquement voisins lorsqu'ils ne diffèrent que par un seul phonème
+        (substitution d'un phonème). Le résultats des calculs sont incorporés
+        dans les quatre bases principales (Manu1, Manu2, Manu35, ManuAll), et
+        les voisins ainsi que leurs fréquences sont listés dans des fichiers
+        séparés (NO1, NO2, NO35, NOall pour les voisins orthographiques; NOP1,
+        NOP2, NOP35 et NOPall pour les voisins phonographiques). </p>
+      <p><b>Homophones et homographes</b>. Le nombre de mots homophones et le
+        nombre de mots homographes ont été calculés pour chacune des entrées
+        lexicales des quatre corpus. A nouveau, les calculs sont réalisés par
+        type et par token. Les valeurs ont été ajoutées aux quatre bases
+        principales (Manu1, Manu2, Manu35, ManuAll). Les mots homophones
+        hétérographes (phonologies identiques et orthographes différentes, e.
+        g., "FIN" et "FAIM") et les mots homographes hétérophones (orthographes
+        identiques et phonologies différentes, e. g., "elles COUVENT" et "le
+        COUVENT") de chacune des entrées lexicales sont listés avec leurs
+        fréquences dans des fichiers distincts (HP1, HP2, HP35, et HPall pour
+        les HomoPhones hétérographes; HG1, HG2, HG35, et HGall pour les
+        HomoGraphes hétérophones). </p>
+      <p><b>Point d'unicité orthographique</b>. Dans les études portant sur la
+        reconnaissance des mots parlés, le point d'unicité est habituellement
+        défini comme correspondant à la position sérielle du phonème (en
+        comptant à partir du premier phonème du mot) à partir duquel le mot
+        devient unique, et diverge donc de tout autre candidat lexical.
+        Transposé aux formes orthographiques, le point d'unicité orthographique
+        réfère à la position de la lettre (en comptant de gauche à droite à
+        partir de la première lettre du mot) à partir de laquelle le mot devient
+        unique et diverge donc de tout autre candidat lexical. Le point
+        d'unicité orthographique est déterminé pour chacune des entrées
+        lexicales des quatre corpus. </p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr> <br>
+      <br>
+      <br>
+      <br>
+    </article>
+    <br>
+    <br>
+  </body>
+</html>

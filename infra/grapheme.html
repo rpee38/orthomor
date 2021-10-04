@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Manulex-Infra</title>
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
+
+      href="resolution_small.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
+
+      href="resolution_smallsmall.css">
+  </head>
+  <body>
+    <header> <br>
+      <table width="100%" border="0">
+        <tbody>
+          <tr>
+            <td align="left" width="17%">
+              <p class="style-langue"> <a style="text-decoration:none" href="indexEngl.html">
+                  English</a></p>
+            </td>
+            <td align="center" width="69%"><span class="style-titre">Manulex
+                Infra </span></td>
+            <td align="center" width="17%"><img src="images/white.JPG" height="41"
+
+                width="22"></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <ul id="menu-demo2">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="#">Description▼</a>
+          <ul>
+            <li><a href="index.html">Description générale</a></li>
+            <li><a href="calculs.html">Comprendre Manulex-infra</a></li>
+            <li><a href="phonetique.html">Codes Phonétiques</a></li>
+            <li><a href="syllabe.html">Syllabes</a></li>
+            <li><a href="grapheme.html">Graphèmes</a></li>
+          </ul>
+        </li>
+        <li><a href="telechargement.html">telechargement</a></li>
+      </ul>
+    </header>
+    <main></main>
+    <footer></footer>
+    <article> <br>
+      <h6> <a> </a></h6>
+      <titrepage>
+        <h1>Graphèmes</h1>
+      </titrepage>
+      <p>
+        Les entrées lexicales de Manulex ont été segmentées en unités
+        graphémiques afin de pouvoir estimer la fréquence et la consistance des
+        relations entre orthographe et phonologie. Autant que possible, le
+        principe central guidant la segmentation graphémique est que chaque
+        groupement orthographique ne corresponde (dans la plupart des cas, voir
+        ci-dessous) qu'à un seul phonème. Le terme "graphème" est donc utilisé
+        ici pour désigner une lettre ou un groupe de lettres associé à un
+        phonème. Remarquons que l'orthographe Française inclu de nombeux
+        graphèmes multi-lettres, tels que "ou", "an", "un", "in", "eu", "ch", et
+        "gn".
+      </p>
+      <p>La segmentation graphémique des mots Français n'est en général pas
+        problématique, bien que des choix s'imposent dans plusieurs cas. Pour
+        complexifier la tâche, à l'image d'un Rubik's cube, les solutions
+        adoptées pour une segmentation particulière ont souvent des incidences
+        sur plusieurs autres segmentations, et il est donc illusoire de
+        considérer une segmentation graphémique particulière indépendamment de
+        l'ensemble des autres segmentations graphémiques déjà effectuées. Les
+        choix réalisés étaient gouvernés par un second principe selon lequel les
+        segmentations devaient maximiser la mise en évidence des inconsistances
+        de prononciations des chaînes orthographiques. Dans ce qui suit, nous
+        détaillons certains de ces cas, et les solutions spécifiques qui ont été
+        adoptées. </p>
+      <p>Deux catégories de problèmes ont été rencontrées. D'une part, la
+        délimitation exacte de la sous-chaîne orthographique qui s'apparie à un
+        phonème est parfois ambiguë. D'autre part, il était dans certains cas
+        impossible d'apparier un seul phonème de la chaîne phonémique à un
+        graphème particulier. </p>
+      <p>La lettre "g" est généralement pronconcée soit comme /g/ lorsque suivie
+        des lettres "a", "o", et "u" (e. g., "gare", "golf", "guide"), soit
+        comme /Z/ lorsqu'elle précède les lettres "i" et "e" ("givre", "gel").
+        La plupart du temps,, la lettre "u" n'est pas prononcée lorsqu'elle suit
+        immédiatement la lettre "g", mais sa présence modifie la prononciation
+        de "g" (e. g., "guise", "gise"). On considère donc que c'est le graphème
+        "gu" qui correspond au phonème /g/. Une analyse similaire s'applique au
+        graphème "qu" correspondant au phonème /k/, et dans lequel la lettre "u"
+        n'est généralement pas prononcée (e.g., "piquant" / pik@ /). Quelques
+        exceptions existent néanmoins. Ainsi, la lettre "u" correspond à la
+        semi-voyelle "w" dans les mots "aquarelle" / akwaREl / et "iguane" /
+        igwan /, ou à la semi-voyelle /8/ dans les mots "linguistique" /
+        l5g8istik / et "aiguille" / eg8ij /. Dans de tels cas, la segmentation
+        en "gu" et "qu" doit être préservée afin de révéler les inconsistances
+        de prononciations ("gu" prononcés /g/, / gw / ou /g8/, "qu" prononcé /k/
+        ou / kw /). </p>
+      <p>L'utilité de permettre la segmentation de groupes graphémiques
+        correspondant à plus qu'un seul phonème est particulièrement claire
+        lorsque le même groupe orthographique est tantôt associé à un seul
+        phonème, tantôt à plus qu'un phonème. Ainsi, traiter les consonnes
+        doubles comme un graphème correspondant à un seul phonème ( e. g.;
+        "gramme", "rappel", "joggeurs", "accord") implique de les considérer de
+        manière similaire lorsque chacune d'elles représente un phonème distinct
+        (e. g., /g/ et /Z/ dans "suggère", /k/ et /s/ dans "vaccin", /t/ et /S/
+        dans "carpaccio"). La terminaison "er" des mots représente un cas
+        similaire. Dans de nombreux mots (essentiellement les verbes à
+        l'infinitif), "er" correspond au phonème /e/ ("aimer" , " parler" , "
+        viser"), mais la terminaison /ER/ apparaît aussi pour plusieurs mots
+        ("amer", "fer", "mer", "enfer"). A nouveau, les inconsistances de
+        prononciations n'émergent que si la méthode de segmentation préserve le
+        groupe "er" comme groupe graphémique, indépendamment de sa
+        prononciation. D'autres cas similaires existent comme dans les groupes
+        "in" (/5/ dans "singe", /in/ dans "bingo"), "im" (/5/ dans "timbre",
+        /im/ dans "interim"), "en" (/@/ dans "enseigne", /@n/ dans "enivre"),
+        "enn" (/En/ dans "ennemi", /@n/ dans "ennui"), "emm" (/em/ dans
+        "Emmanuel", /@m/ dans "emmener", /am/ dans "femme" et "récemment", /Em/
+        dans "dilemme"), "ill" (/j/ dans "ailleurs", /ij/ dans "Antilles"),
+        "illi" (/ji/ dans "taillis", /ij/ dans "serpillière"), "ay" (/E/ dans
+        "Raymond", /aj/ dans "mayonnaise", /Ej/ dans "crayon"), et "ey" (/E/
+        dans "poney", /Ej/ dans "asseyait"). </p>
+      <p>Dans d'autres cas, des groupes graphémiques se trouvent associés à plus
+        qu'un phonème car aucune correspondance ne peut être définie entre les
+        lettres et un phonème particulier. Le graphème "oi" est fréquent dans
+        les mots français, et il est généralement prononcé /wa/ comme dans les
+        mots "oiseau" et "noisette". Toutefois, à l'inverse de "ui" qui peut
+        être segmenté en "u" (généralement /8/) et "i" (généralement /i/), il
+        est nécessaire de conserver le groupement "oi". Des problèmes similaires
+        apparaissent pour les graphèmes "oï", "oî", "oin" et "oy", ainsi que
+        pour certains graphèmes de mots étrangers tels "ue" / ju / dans "fuel"
+        ou "le" /9l/ dans "scrabble". </p>
+      <p>Finalement, la langue Française est particulière au regard des marques
+        morphologiques apparaissant en finale de mots. Un grand nombre de
+        marques morphologiques dérivationnelles ne sont pas prononcées alors
+        qu'elles persistent orthographiquement. Ainsi, le "d" final du mot
+        "lourd", duquel est dérivé le mot "lourdeur" est silencieux, alors que
+        le "d" du mot Anglais "kind" (duquel est dérivé "kindness") est
+        prononcé. En outre, le "s" qui signale les formes plurielles des mots
+        Français ("tables") de même que le "s" qui indique la seconde personne
+        des verbes ("tu manges") sont silencieux, alors qu'ils sont prononcés
+        dans les mots anglais "tables" ou "he/she eats". L'existence de lettres
+        silencieuses a été prise en compte en les associant à un phonème
+        silencieux (représenté par le signe dièse). </p>
+      <p>Le nombre total de graphèmes obtenus est de 125. Ils sont listés
+        ci-dessous avec un exemple.
+      </p>
+      <br>
+      <br>
+      <table width="498" cellspacing="0" cellpadding="0" border="0">
+        <colgroup><col width="80" span="2"> <col width="10"> <col width="80" span="2">
+          <col width="8"> <col width="80" span="2"> </colgroup>
+        <tbody>
+          <tr>
+            <td width="80" bgcolor="#CCCCCC">Grapheme</td>
+            <td width="80" bgcolor="#CCCCCC">Example</td>
+            <td width="10" bgcolor="#CCCCCC"><br>
+            </td>
+            <td width="80" bgcolor="#CCCCCC">Grapheme</td>
+            <td width="80" bgcolor="#CCCCCC">Example</td>
+            <td width="8" bgcolor="#CCCCCC"><br>
+            </td>
+            <td width="80" bgcolor="#CCCCCC">Grapheme</td>
+            <td width="80" bgcolor="#CCCCCC">Example</td>
+          </tr>
+          <tr>
+            <td width="80"><br>
+            </td>
+            <td width="80"><br>
+            </td>
+            <td width="10"><br>
+            </td>
+            <td width="80"><br>
+            </td>
+            <td width="80"><br>
+            </td>
+            <td width="8"><br>
+            </td>
+            <td width="80"><br>
+            </td>
+            <td width="80"><br>
+            </td>
+          </tr>
+          <tr>
+            <td width="80">a</td>
+            <td width="80">affiche</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">er</td>
+            <td width="80">amer</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">on</td>
+            <td width="80">ronde</td>
+          </tr>
+          <tr>
+            <td width="80">à</td>
+            <td width="80">çà</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">eu</td>
+            <td width="80">deux</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">o</td>
+            <td width="80">bol</td>
+          </tr>
+          <tr>
+            <td width="80">â</td>
+            <td width="80">âge</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">eû</td>
+            <td width="80">jeûner</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">ô</td>
+            <td width="80">hôpital</td>
+          </tr>
+          <tr>
+            <td width="80">aen</td>
+            <td width="80">caen</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">ey</td>
+            <td width="80">poneys</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">ooin</td>
+            <td width="80">shampooing</td>
+          </tr>
+          <tr>
+            <td width="80">ai</td>
+            <td width="80">aigle</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">ez</td>
+            <td width="80">parlez</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">oo</td>
+            <td width="80">alcool</td>
+          </tr>
+          <tr>
+            <td width="80">aî</td>
+            <td width="80">aîné</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">f</td>
+            <td width="80">fond</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">ou</td>
+            <td width="80">joue</td>
+          </tr>
+          <tr>
+            <td width="80">aim</td>
+            <td width="80">daim</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">ff</td>
+            <td width="80">affable</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">où</td>
+            <td width="80">où</td>
+          </tr>
+          <tr>
+            <td width="80">ain</td>
+            <td width="80">train</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">ge</td>
+            <td width="80">bougeoir</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">oû</td>
+            <td width="80">août</td>
+          </tr>
+          <tr>
+            <td width="80">am</td>
+            <td width="80">tambour</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">g</td>
+            <td width="80">gare</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">ow</td>
+            <td width="80">clown</td>
+          </tr>
+          <tr>
+            <td width="80">an</td>
+            <td width="80">ange</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">gg</td>
+            <td width="80">agglomération</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">oy</td>
+            <td width="80">troyes</td>
+          </tr>
+          <tr>
+            <td width="80">aon</td>
+            <td width="80">faon</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">gn</td>
+            <td width="80">agneau</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">ph</td>
+            <td width="80">dauphin</td>
+          </tr>
+          <tr>
+            <td width="80">aô</td>
+            <td width="80">saône</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">gu</td>
+            <td width="80">aiguiser</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">p</td>
+            <td width="80">pont</td>
+          </tr>
+          <tr>
+            <td width="80">au</td>
+            <td width="80">épaule</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">h</td>
+            <td width="80">hiver</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">pp</td>
+            <td width="80">grippe</td>
+          </tr>
+          <tr>
+            <td width="80">aw</td>
+            <td width="80">crawl</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">i</td>
+            <td width="80">rire</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">q</td>
+            <td width="80">cinq</td>
+          </tr>
+          <tr>
+            <td width="80">ay</td>
+            <td width="80">crayon</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">î</td>
+            <td width="80">île</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">qu</td>
+            <td width="80">quille</td>
+          </tr>
+          <tr>
+            <td width="80">b</td>
+            <td width="80">balcon</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">ï</td>
+            <td width="80">héroïque</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">r</td>
+            <td width="80">roue</td>
+          </tr>
+          <tr>
+            <td width="80">bb</td>
+            <td width="80">abbé</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">il</td>
+            <td width="80">ail</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">rr</td>
+            <td width="80">nourrice</td>
+          </tr>
+          <tr>
+            <td width="80">cch</td>
+            <td width="80">pinocchio</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">illi</td>
+            <td width="80">serpillière</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">sch</td>
+            <td width="80">schéma</td>
+          </tr>
+          <tr>
+            <td width="80">cc</td>
+            <td width="80">accord</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">ill</td>
+            <td width="80">accastillage</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">sc</td>
+            <td width="80">crescendo</td>
+          </tr>
+          <tr>
+            <td width="80">ch</td>
+            <td width="80">chaise</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">im</td>
+            <td width="80">timbre</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">sç</td>
+            <td width="80">acquiesça</td>
+          </tr>
+          <tr>
+            <td width="80">c</td>
+            <td width="80">car</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">in</td>
+            <td width="80">vin</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">sh</td>
+            <td width="80">washington</td>
+          </tr>
+          <tr>
+            <td width="80">ck</td>
+            <td width="80">hockey</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">în</td>
+            <td width="80">devînt</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">ss</td>
+            <td width="80">mousse</td>
+          </tr>
+          <tr>
+            <td width="80">cqu</td>
+            <td width="80">acquéreur</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">ïn</td>
+            <td width="80">coïncidence</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">s</td>
+            <td width="80">rose</td>
+          </tr>
+          <tr>
+            <td width="80">ç</td>
+            <td width="80">hameçon</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">j</td>
+            <td width="80">jour</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">th</td>
+            <td width="80">panthère</td>
+          </tr>
+          <tr>
+            <td width="80">d</td>
+            <td width="80">date</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">k</td>
+            <td width="80">kilo</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">t</td>
+            <td width="80">vite</td>
+          </tr>
+          <tr>
+            <td width="80">dd</td>
+            <td width="80">bouddha</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">kk</td>
+            <td width="80">drakkar</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">tt</td>
+            <td width="80">roulotte</td>
+          </tr>
+          <tr>
+            <td width="80">ea</td>
+            <td width="80">leader</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">le</td>
+            <td width="80">scrabble</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">ue</td>
+            <td width="80">bruegel</td>
+          </tr>
+          <tr>
+            <td width="80">ean</td>
+            <td width="80">jean</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">l</td>
+            <td width="80">loup</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">um</td>
+            <td width="80">humble</td>
+          </tr>
+          <tr>
+            <td width="80">eau</td>
+            <td width="80">agneau</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">ll</td>
+            <td width="80">actuelle</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">un</td>
+            <td width="80">aucun</td>
+          </tr>
+          <tr>
+            <td width="80">e</td>
+            <td width="80">adverbe</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">m</td>
+            <td width="80">meuble</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">ü</td>
+            <td width="80">capharnaüm</td>
+          </tr>
+          <tr>
+            <td width="80">é</td>
+            <td width="80">abbé</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">mm</td>
+            <td width="80">pomme</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">u</td>
+            <td width="80">rue</td>
+          </tr>
+          <tr>
+            <td width="80">è</td>
+            <td width="80">mystère</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">ng</td>
+            <td width="80">boeing</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">û</td>
+            <td width="80">bûche</td>
+          </tr>
+          <tr>
+            <td width="80">ê</td>
+            <td width="80">tête</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">n</td>
+            <td width="80">nom</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">v</td>
+            <td width="80">vent</td>
+          </tr>
+          <tr>
+            <td width="80">ë</td>
+            <td width="80">noël</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">nn</td>
+            <td width="80">abonné</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">wh</td>
+            <td width="80">whisky</td>
+          </tr>
+          <tr>
+            <td width="80">ee</td>
+            <td width="80">jeep</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">oa</td>
+            <td width="80">goal</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">w</td>
+            <td width="80">kiwi</td>
+          </tr>
+          <tr>
+            <td width="80">ei</td>
+            <td width="80">veine</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">oeu</td>
+            <td width="80">bœuf</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">x</td>
+            <td width="80">boxe</td>
+          </tr>
+          <tr>
+            <td width="80">eim</td>
+            <td width="80">reims</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">oe</td>
+            <td width="80">moelle</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">y</td>
+            <td width="80">yoga</td>
+          </tr>
+          <tr>
+            <td width="80">ein</td>
+            <td width="80">plein</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">oê</td>
+            <td width="80">poêle</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">ym</td>
+            <td width="80">cymbale</td>
+          </tr>
+          <tr>
+            <td width="80">em</td>
+            <td width="80">assembler</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">oin</td>
+            <td width="80">loin</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">yn</td>
+            <td width="80">larynx</td>
+          </tr>
+          <tr>
+            <td width="80">emm</td>
+            <td width="80">dilemme</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">oi</td>
+            <td width="80">oiseau</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">z</td>
+            <td width="80">lézard</td>
+          </tr>
+          <tr>
+            <td width="80">en</td>
+            <td width="80">dent</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">oî</td>
+            <td width="80">benoît</td>
+            <td width="8"><br>
+            </td>
+            <td width="80">zz</td>
+            <td width="80">pizza</td>
+          </tr>
+          <tr>
+            <td width="80">enn</td>
+            <td width="80">solennel</td>
+            <td width="10"><br>
+            </td>
+            <td width="80">om</td>
+            <td width="80">ombre</td>
+            <td width="8"><br>
+            </td>
+            <td width="80"><br>
+            </td>
+            <td width="80"><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr> <br>
+      <br>
+      <br>
+      <br>
+    </article>
+    <br>
+    <br>
+  </body>
+</html>
